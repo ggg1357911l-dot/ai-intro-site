@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="人工智能通识科普网站，带你了解 AI 的概念、发展历程、核心技术、应用领域与未来展望。" />
+  <title>AI 科普 · 走进人工智能</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">AI</span>
+        <span>人工智能科普</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#what" class="nav__link">什么是 AI</a></li>
+        <li><a href="#history" class="nav__link">发展历程</a></li>
+        <li><a href="#tech" class="nav__link">核心技术</a></li>
+        <li><a href="#applications" class="nav__link">应用领域</a></li>
+        <li><a href="#future" class="nav__link">未来展望</a></li>
+        <li>
+          <button class="nav__theme" id="themeToggle" aria-label="切换深浅色模式">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主视觉 -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">AI FOR EVERYONE</p>
+      <h1 class="hero__title reveal">走进<span class="gradient-text">人工智能</span>的世界</h1>
+      <p class="hero__subtitle reveal">
+        从图灵测试到深度学习，从实验室到日常生活。这里用最通俗的语言，
+        带你系统了解人工智能是什么、如何发展、能做什么，以及它将走向何方。
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#what" class="btn btn--primary">开始了解</a>
+        <a href="#history" class="btn btn--ghost">看发展历程 →</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="stat">
+          <span class="stat__num" data-count="1956">0</span>
+          <span class="stat__label">AI 正式诞生（年）</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="3">0</span>
+          <span class="stat__label">大发展阶段</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="10">0</span>
+          <span class="stat__label">核心应用领域+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 什么是 AI -->
+  <section class="section" id="what">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">01 · 基础认知</p>
+        <h2 class="section__title">什么是人工智能？</h2>
+        <p class="section__desc">
+          人工智能（Artificial Intelligence, AI）是研究如何让机器模拟、延伸和扩展人类智能的一门科学技术。
+          简单来说，就是让机器能够"像人一样"看、听、说、思考和决策。
+        </p>
+      </div>
+      <div class="cards cards--3">
+        <article class="card reveal">
+          <div class="card__icon">🧠</div>
+          <h3 class="card__title">感知</h3>
+          <p class="card__text">通过计算机视觉、语音识别等技术，让机器"看懂"图像、"听懂"声音，感知外部世界。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">💡</div>
+          <h3 class="card__title">认知</h3>
+          <p class="card__text">借助自然语言处理、知识图谱等能力，理解语义、推理判断，学会"思考"。</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon">🤖</div>
+          <h3 class="card__title">行动</h3>
+          <p class="card__text">结合规划与决策、机器人控制，让智能体做出反应，完成"执行"闭环。</p>
+        </article>
+      </div>
+      <div class="definition reveal">
+        <p class="definition__text">
+          <strong>通俗版定义：</strong>人工智能 = 让计算机学会完成那些"原本需要人类智慧才能完成"的任务，
+          比如识别图片、翻译语言、下围棋、开车、写文章、看病诊断。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 发展历程 -->
+  <section class="section section--alt" id="history">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">02 · 时间脉络</p>
+        <h2 class="section__title">人工智能发展历程</h2>
+        <p class="section__desc">70 余年间，AI 经历了三次浪潮，从概念诞生走向今天的爆发式应用。</p>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1950</div>
+          <div class="timeline__body">
+            <h3>图灵测试提出</h3>
+            <p>艾伦·图灵发表《计算机器与智能》，提出判断机器是否具备智能的经典方法——图灵测试。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1956</div>
+          <div class="timeline__body">
+            <h3>AI 正式诞生</h3>
+            <p>达特茅斯会议召开，"人工智能"一词被正式提出，标志这门学科正式建立。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">1997</div>
+          <div class="timeline__body">
+            <h3>"深蓝"战胜国际象棋冠军</h3>
+            <p>IBM 的深蓝计算机击败世界冠军卡斯帕罗夫，引发全球对 AI 的广泛关注。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2016</div>
+          <div class="timeline__body">
+            <h3>AlphaGo 击败围棋世界冠军</h3>
+            <p>深度学习取得里程碑突破，AlphaGo 战胜李世石，AI 进入大众视野。</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2022+</div>
+          <div class="timeline__body">
+            <h3>大模型时代</h3>
+            <p>ChatGPT 等大语言模型横空出世，生成式 AI 席卷全球，走进千家万户。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 核心技术 -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">03 · 底层原理</p>
+        <h2 class="section__title">核心技术</h2>
+        <p class="section__desc">人工智能由多项关键技术共同支撑，它们相互配合，构成今天的智能系统。</p>
+      </div>
+      <div class="tech-grid">
+        <article class="tech-card reveal">
+          <span class="tech-card__num">01</span>
+          <h3>机器学习</h3>
+          <p>让计算机从数据中自动学习规律，而非显式编程。是 AI 的核心方法。</p>
+          <div class="tech-card__tags"><span>监督学习</span><span>无监督学习</span><span>强化学习</span></div>
+        </article>
+        <article class="tech-card reveal">
+          <span class="tech-card__num">02</span>
+          <h3>深度学习</h3>
+          <p>基于多层神经网络的机器学习方法，擅长处理图像、语音、文本等复杂数据。</p>
+          <div class="tech-card__tags"><span>神经网络</span><span>CNN</span><span>Transformer</span></div>
+        </article>
+        <article class="tech-card reveal">
+          <span class="tech-card__num">03</span>
+          <h3>自然语言处理</h3>
+          <p>让机器理解、生成人类语言，是智能助手与大模型对话能力的基石。</p>
+          <div class="tech-card__tags"><span>文本理解</span><span>机器翻译</span><span>对话系统</span></div>
+        </article>
+        <article class="tech-card reveal">
+          <span class="tech-card__num">04</span>
+          <h3>计算机视觉</h3>
+          <p>赋予机器"看懂"世界的能力，广泛应用于人脸识别、自动驾驶、医疗影像。</p>
+          <div class="tech-card__tags"><span>图像识别</span><span>目标检测</span><span>图像生成</span></div>
+        </article>
+        <article class="tech-card reveal">
+          <span class="tech-card__num">05</span>
+          <h3>生成式 AI</h3>
+          <p>能够创作全新内容——文字、图像、音频、视频，是当下最热门的方向。</p>
+          <div class="tech-card__tags"><span>大语言模型</span><span>文生图</span><span>多模态</span></div>
+        </article>
+        <article class="tech-card reveal">
+          <span class="tech-card__num">06</span>
+          <h3>强化学习</h3>
+          <p>通过与环境的试错交互来学习最优策略，驱动了游戏 AI 与机器人控制。</p>
+          <div class="tech-card__tags"><span>策略优化</span><span>奖励机制</span><span>自主决策</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 应用领域 -->
+  <section class="section section--alt" id="applications">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">04 · 落地场景</p>
+        <h2 class="section__title">应用领域</h2>
+        <p class="section__desc">AI 已渗透到各行各业，正悄然改变我们的工作与生活方式。</p>
+      </div>
+      <div class="apps">
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🏥</span>
+          <h3>医疗健康</h3>
+          <p>辅助诊断、药物研发、影像分析</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🚗</span>
+          <h3>智能交通</h3>
+          <p>自动驾驶、路径规划、交通调度</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🏠</span>
+          <h3>智能家居</h3>
+          <p>语音助手、设备联动、场景自动化</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">📚</span>
+          <h3>智慧教育</h3>
+          <p>个性化学习、智能批改、答疑辅导</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">💰</span>
+          <h3>金融科技</h3>
+          <p>风控反欺诈、智能投顾、客服机器人</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🎨</span>
+          <h3>内容创作</h3>
+          <p>AI 写作、绘画、音乐、视频生成</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🏭</span>
+          <h3>智能制造</h3>
+          <p>质检检测、预测维护、柔性生产</p>
+        </a>
+        <a class="app reveal" href="#applications">
+          <span class="app__icon">🎮</span>
+          <h3>娱乐游戏</h3>
+          <p>智能 NPC、关卡生成、AI 陪练</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 未来展望 -->
+  <section class="section" id="future">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__tag">05 · 前景与挑战</p>
+        <h2 class="section__title">未来展望</h2>
+      </div>
+      <div class="future">
+        <div class="future__list reveal">
+          <div class="future__item">
+            <h3>🌟 机遇</h3>
+            <ul>
+              <li>通用人工智能（AGI）逐步逼近</li>
+              <li>AI 与各行业深度融合，释放生产力</li>
+              <li>人机协作成为新常态</li>
+            </ul>
+          </div>
+          <div class="future__item future__item--warn">
+            <h3>⚠️ 挑战</h3>
+            <ul>
+              <li>数据隐私与安全风险</li>
+              <li>算法偏见与公平性</li>
+              <li>就业结构调整与社会伦理</li>
+            </ul>
+          </div>
+        </div>
+        <div class="future__quote reveal">
+          <blockquote>
+            "人工智能不会取代人类，但会用 AI 的人，将取代不会用 AI 的人。"
+          </blockquote>
+          <p class="future__quote-author">—— 时代的共识</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo">
+          <span class="nav__logo-mark">AI</span>
+          <span>人工智能科普</span>
+        </a>
+        <p>让每个人都能看懂人工智能。</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#what">什么是 AI</a>
+        <a href="#history">发展历程</a>
+        <a href="#tech">核心技术</a>
+        <a href="#applications">应用领域</a>
+      </nav>
+      <p class="footer__copyright">© 2026 人工智能科普站 · 仅供学习参考</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
